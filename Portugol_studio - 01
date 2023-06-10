@@ -1,0 +1,63 @@
+programa {
+	funcao inicio() {
+	    
+	    cadeia vetor_nome_meninos[2],vetor_nome_meninas[2],vetor_titulo[5] = {"Nome_meninos","nota_meninos","Nome_meninas","Nota_meninas","Soma_Matrizes"}
+	    real matriz_meninos[2][2],matriz_meninas[2][2],soma_matriz[4][4]
+	    
+	    //"------------------------------------------------------------------------------")
+	     //input Meninos
+	   
+	    para(inteiro a = 0; a < 2; a++){
+	       escreva("Insira o nome do aluno: (menino) \n")
+	       leia(vetor_nome_meninos[a])
+	       escreva("\n")
+}
+ 
+	    para(inteiro c = 0; c < 2; c++){
+	        para(inteiro g = 0; g < 2; g++){
+	        escreva("Insira a Nota do Aluno (menino): \n")
+	        leia(matriz_meninos[c][g])
+	        escreva("\n")
+	       
+     }
+}
+
+        //"------------------------------------------------------------------------------")
+	    //input Meninas
+	    
+	    para(inteiro b = 0; b < 2; b++){
+	        escreva("insira o nome da aluna:(menina) \n")
+	        leia(vetor_nome_meninas[b])
+	        escreva("\n")
+}
+	        
+	     para(inteiro d = 0; d < 2; d++){
+	        para(inteiro g = 0; g < 2; g++){
+	        escreva("Insira a Nota do Aluna (menina): \n")
+	        leia(matriz_meninas[d][g])
+	        escreva("\n")
+	 }
+}
+
+        //"------------------------------------------------------------------------------")
+        //titulo
+	   
+	    para(inteiro f = 0; f < 5; f++){
+	        escreva("|||",vetor_titulo[f],"|||","\t\t\t\t\t")
+	       
+	    }
+	    
+	    escreva("\n\n")
+	    
+	    //"------------------------------------------------------------------------------")
+	    //alimentando a tabela
+	    
+	   
+	    para(inteiro y = 0; y < 2; y++){
+	        para(inteiro x = 0; x < 2; x++)
+	        escreva("\n",vetor_nome_meninos[y],"\t\t\t\t\t\t\t\t\t\t",matriz_meninos[y][x],"\t\t\t\t\t\t\t\t\t",vetor_nome_meninas[y],"\t\t\t\t\t\t\t\t\t",matriz_meninas[y][x],"\t\t\t\t\t\t\t\t\t",
+	        matriz_meninos[y][x]+matriz_meninas[y][x])
+	    }
+	   
+	}
+}
